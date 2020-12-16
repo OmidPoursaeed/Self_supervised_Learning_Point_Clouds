@@ -27,3 +27,15 @@ python SVM.py --model pointnet_cls_rot_svm_scoped --svm_c 0.001 --dataset modeln
 The ModelNet data will be automatically downloaded to the `data/` directory
 
 The ShapeNet data can be downloaded from [here](https://www.shapenet.org/). Then set the `SHAPENET_DIR` in `provider.py` to the ShapeNet folder.
+
+## Citation
+
+If you use the code in this repository in your paper, please consider citing:
+```
+@article{poursaeed2020self,
+  title={Self-supervised Learning of Point Clouds via Orientation Estimation},
+  author={Poursaeed, Omid and Jiang, Tianxing and Qiao, Quintessa and Xu, Nayun and Kim, Vladimir G.},
+  journal={arXiv preprint arXiv:2008.00305},
+  year={2020}
+}
+```
