@@ -1,12 +1,11 @@
-# Self supervised Learning of Point Clouds via Orientation Estimation
-
-Code for the paper "[Self-supervised Learning of Point Clouds via Orientation Estimation](https://arxiv.org/pdf/2008.00305.pdf)", 3DV 2020.
+# Self-supervised learning of point clouds via orientation estimation
 
 ## Installation
 
 We use tensorflow 1.14, python 3.6 and h5py.
 
 ## Usage
+
 
 To train the rotation prediction model with 18 random rotation angles, run:
 
@@ -24,18 +23,6 @@ python SVM.py --model pointnet_cls_rot_svm_scoped --svm_c 0.001 --dataset modeln
 
 ## Datasets
 
-The ModelNet data will be automatically downloaded to the `data/` directory
+The ModelNet data will be automatically downloaded to `data/` directory
 
 The ShapeNet data can be downloaded from [here](https://www.shapenet.org/). Then set the `SHAPENET_DIR` in `provider.py` to the ShapeNet folder.
-
-## Citation
-
-If you use the code in this repository in your paper, please consider citing:
-```
-@article{poursaeed2020self,
-  title={Self-supervised Learning of Point Clouds via Orientation Estimation},
-  author={Poursaeed, Omid and Jiang, Tianxing and Qiao, Quintessa and Xu, Nayun and Kim, Vladimir G.},
-  journal={arXiv preprint arXiv:2008.00305},
-  year={2020}
-}
-```

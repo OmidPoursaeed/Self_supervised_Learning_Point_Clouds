@@ -1,0 +1,1 @@
+python train_seg.py --no_transformation_loss --no_input_transform --no_feature_transform

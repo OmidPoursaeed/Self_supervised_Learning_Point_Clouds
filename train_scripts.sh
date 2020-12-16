@@ -1,0 +1,17 @@
+python train_rotation_prediction.py --num_angles 6;
+python train_rotation_prediction.py --num_angles 18;
+python train_rotation_prediction.py --num_angles 32;
+python train_rotation_prediction.py --num_angles 54;
+python train_rotation_prediction.py --num_angles 100;
+python train_rotation_prediction.py --num_angles 6 --no_transformation_loss;
+python train_rotation_prediction.py --num_angles 18 --no_transformation_loss;
+python train_rotation_prediction.py --num_angles 32 --no_transformation_loss;
+python train_rotation_prediction.py --num_angles 54 --no_transformation_loss;
+python train_rotation_prediction.py --num_angles 54 --no_transformation_loss --no_input_transform;
+python train_rotation_prediction.py --num_angles 54 --no_transformation_loss --no_feature_transform;
+python train_rotation_prediction.py --num_angles 54 --no_transformation_loss --no_input_transform --no_feature_transform;
+python train_rotation_prediction.py --num_angles 100 --no_transformation_loss;
+python train_rotation_prediction.py --num_angles 18 --dataset shapenet --log_dir log_rotation_shapenet;
+python train_rotation_prediction.py --num_angles 18 --dataset shapenet --log_dir log_rotation_shapenet --no_transformation_loss --no_input_transform;
+python train_rotation_prediction.py --num_angles 18 --dataset shapenet --log_dir log_rotation_shapenet --no_transformation_loss --no_feature_transform;
+python train_rotation_prediction.py --num_angles 18 --dataset shapenet --log_dir log_rotation_shapenet --no_transformation_loss --no_input_transform --no_feature_transform;
