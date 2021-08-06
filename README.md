@@ -16,6 +16,8 @@ python train_rotation_prediction.py --num_angles 18 --dataset shapenet --log_dir
 
 Please see `train_rotation_prediction.py` for more arguments.
 
+[Here](https://drive.google.com/drive/folders/1NewPE6b7MdK1PyJ-P9JWo2RLIdQu_-NU?usp=sharing) is a pretrained model of running the script above.
+
 To train a linear SVM for object classification on top of the pretrained weights run:
 
 ```
